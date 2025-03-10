@@ -1,0 +1,49 @@
+/* Branding Header */
+.branding-header {
+    position: absolute;
+    top: 2%;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 60%;
+    max-width: 550px;
+    text-align: center;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #4a90e2, #1e3a8a);
+    color: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect - Darkens background slightly */
+.branding-header:hover {
+    background: linear-gradient(to right, #1e3a8a, #4a90e2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Title hover effect */
+.site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.site-title:hover {
+    color: #ffdd57;
+    text-shadow: 0px 0px 10px rgba(255, 221, 87, 0.7);
+}
+
+/* Tagline hover effect */
+.site-tagline {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 5px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.site-tagline:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
