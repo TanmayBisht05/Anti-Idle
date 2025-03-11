@@ -34,11 +34,11 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 // import AuthPage from './pages/signup'
-import LScomponent from './pages/Login-Signup/Login-Signup_component'
 // import { Route, Routes } from 'react-router-dom'
-
+import LScomponent from "./pages/Login-Signup/Login-Signup_component"
 // function App() {
 //   const [count, setCount] = useState(0)
+
 //   return (
 //     <>
 //       {/* <div>
@@ -68,11 +68,15 @@ import LScomponent from './pages/Login-Signup/Login-Signup_component'
 //     </>
 //   )
 // }
+
 function App() {
   return (
     <div className="background-blur">
-        <LScomponent/>
+    <LScomponent/>
     </div>
   );
-};
+}
+
+
+
 export default App
