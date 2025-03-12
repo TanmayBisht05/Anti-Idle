@@ -1,11 +1,11 @@
 /* Branding Header */
 .branding-header {
     position: absolute;
-    top: 2%;
+    top: 3%;
     left: 49%;
     transform: translateX(-50%);
     width: 60%;
-    max-width: 550px;
+    max-width: 650px;
     text-align: center;
     padding: 20px 50px;
     background: linear-gradient(to right, #4a90e2, #1e3a8a);
