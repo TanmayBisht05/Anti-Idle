@@ -90,7 +90,7 @@
 // export default App
 // MAIN SHIT HERE
 import { Routes, Route, Navigate } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage/HomePage";
 import LScomponent from "./pages/Login-Signup/Login-Signup_component";
 import { useEffect, useState } from "react";
 
