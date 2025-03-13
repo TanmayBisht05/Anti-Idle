@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-import { FaUser } from "react-icons/fa"; // Import the user icon
+// import { FaUser } from "react-icons/fa"; // Import the user icon
 
 const HomePage = () => {
   return (
