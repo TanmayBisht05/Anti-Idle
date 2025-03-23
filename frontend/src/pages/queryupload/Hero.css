@@ -1,0 +1,120 @@
+.hero {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  height:70%;
+  text-align: center;
+  /* padding: 50px 20px; */
+  /* background: linear-gradient(to right, #d5a5a5, #e6f7d4); */
+  background: linear-gradient(to right, #d5a5a5, #e6f7d4,#d5a5a5);
+   animation: moveColor 7s linear infinite;
+  background-size: 300% 100%; 
+  transition: min-height 0.5s ease-in-out;
+}
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle,rgba(235, 193, 233, 0.8) 10%, transparent 70%);
+  top: 10%;
+  left: 15%;  
+  border-radius: 50%;
+  animation: fireworks 2s infinite ease-in-out alternate;
+}
+.hero::after {
+  top: 70%;
+  left: 75%;
+  animation-delay: 1s;
+}
+@keyframes fireworks {
+  0% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.highlight {
+  color: green;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.lost-btn,
+.found-btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.lost-btn {
+  background: red;
+  color: white;
+}
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+}
+.lost-btn:hover {
+  background: darkred;
+}
+
+.found-btn {
+  background: green;
+  color: white;
+}
+
+.found-btn:hover {
+  background: darkgreen;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  gap: 35%;
+  height:18vh;
+  /* border:2px solid black; */
+}
+
+/* .images img {
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+} */
+.chut{
+  display: inline-block;
+  animation: wave 0.85s infinite alternate;
+}
+@keyframes wave {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes moveColor {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.hero.expanded {
+  min-height: 118%;
+}
